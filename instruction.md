@@ -72,3 +72,15 @@ $ git push origin main
 ```git
 $ git pull --rebase origin master
 ```
+
+### 待解决的问题与目前解决方法：
+#### 一、Push 后报错
+具体报错信息：
+```git
+unable to access '<远程库地址>': OpenSSL SSL_read: Connection 
+was reset, errno 10054
+```
+目前解决方法：
+输入命令：
+```git
+$ git config --global http.sslverify "false"
